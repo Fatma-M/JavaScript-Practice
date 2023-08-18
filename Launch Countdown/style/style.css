@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body {
+  font-family: "Red Hat Text", sans-serif;
+  background: linear-gradient(hsl(234, 17%, 12%), hsl(235, 16%, 14%));
+  overflow: hidden;
+}
+
+.container {
+  padding-top: 10%;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: url("../images/bg-stars.svg") no-repeat center center/cover;
+}
+
+header {
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+}
+@media (max-width: 570px) {
+  header {
+    font-size: 16px;
+  }
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+@media (max-width: 570px) {
+  main {
+    gap: 8%;
+  }
+}
+main .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+main .card .card-number {
+  background: linear-gradient(hsl(235, 16%, 16%) 50%, hsl(237, 21%, 20%) 50%);
+  color: hsl(345, 95%, 68%);
+  padding: 15px 30px;
+  border-radius: 10px;
+  position: relative;
+}
+@media (max-width: 570px) {
+  main .card .card-number {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 400px) {
+  main .card .card-number h1 {
+    font-size: 24px;
+  }
+}
+main .card .card-number:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(hsl(234, 17%, 12%), hsl(235, 16%, 14%));
+  position: absolute;
+  left: -8px;
+  top: 45%;
+}
+main .card .card-number:after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(hsl(234, 17%, 12%), hsl(235, 16%, 14%));
+  position: absolute;
+  right: -8px;
+  top: 45%;
+}
+main .card .card-title {
+  color: hsl(237, 18%, 59%);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2.2px;
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+footer .footer-container {
+  background-image: url("../images/pattern-hills.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+  cursor: pointer;
+}
+@media (max-width: 570px) {
+  footer .footer-container {
+    background-size: cover;
+  }
+}/*# sourceMappingURL=style.css.map */
